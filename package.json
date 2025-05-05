@@ -13,5 +13,12 @@
     "@biomejs/biome": "^1.9.4",
     "typescript": "~5.7.2",
     "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "face-api.js": "^0.22.2",
+    "lil-gui": "^0.20.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
