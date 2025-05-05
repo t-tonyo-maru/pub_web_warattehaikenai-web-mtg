@@ -58,7 +58,7 @@ const run = async () => {
    */
   // モデルの読み込み
   // https://github.com/justadudewhohacks/face-api.js/tree/master/weights
-  Promise.all([
+  await Promise.all([
     faceapi.nets.tinyFaceDetector.loadFromUri(`${GITHUB_PAGES_PATH}/weights`),
     faceapi.nets.faceLandmark68Net.loadFromUri(`${GITHUB_PAGES_PATH}/weights`),
     faceapi.nets.faceRecognitionNet.loadFromUri(`${GITHUB_PAGES_PATH}/weights`),
