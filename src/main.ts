@@ -81,7 +81,7 @@ const run = async () => {
       console.error(error);
     });
 
-  // Webカメラが許可され、video に展開されたときに発火する関数
+  // Web カメラが許可され、video に再生されたときに発火する関数
   videoEl.addEventListener('play', () => {
     const canvas = faceapi.createCanvasFromMedia(videoEl);
     canvas.id = 'canvas';
